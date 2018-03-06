@@ -1,0 +1,462 @@
+/* Reseteamos las características predefinidas de la página */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Tahoma;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Media queries */
+
+/* Pantalla de smartphone */
+@media screen and (min-width: 320px) and (max-width: 720px){
+
+    /* Estilos de la página */
+    /* Colores */
+    body {
+        background-color: white ;
+    }
+
+    /* Imágenes */
+    img.cabecera-hojas {   
+        width: 100%; 
+        height: 100%;
+    } 
+
+    img.logo {  
+	    width: 100px;  
+        height: 100px;
+    } 
+
+    img.cabecera {   
+        height: calc(100% -300px);
+        width: calc(100% -300px);
+    } 
+
+    img.image {  
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    } 
+
+    /* Textos */
+    #title1 {
+        text-align: center;
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: white;
+	    font-weight: bold;
+    }
+
+    #title2 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-style: italic;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #title3 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-weight: bold;
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    p {
+        font-family: "Tahoma";
+	    color: hsl(0, 0%, 20%);
+	    font-style: normal;
+        font-size: 15px;
+        text-align: justify;
+        margin-right: 20px;
+        margin-left: 20px;	
+    }
+
+    /* Espaciado de las cajas */
+    div.box2 {
+        display: flex;
+        flex-direction: column;
+        background-color: DarkGray ;
+        padding: 10px;
+    }
+
+    div.box3 {
+        display: flex;
+        flex-direction: column;
+        background-color: orange ;
+        padding: 10px;
+        }
+
+    div.box4 {
+        display: flex;
+        justify-content: center;
+        }
+
+    div.box5 {
+        display: flex;
+        justify-content: center;
+        background-color: DarkGray ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        }
+
+    span.contacto {
+        display: flex;
+        justify-content: center;
+        background-color: orange ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        }
+
+    span.cabecera {
+        display: flex;
+        justify-content: space-around;
+        }
+
+    div.pie {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    th.list, td.list {
+        font-family: "Tahoma";
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Pantalla de tablet */
+@media screen and (min-width: 720px) and (max-width: 1080px){
+
+    /* Estilos de la página */
+    /* Colores */
+    body {
+        background-color: white ;
+    }
+
+    /* Imágenes */
+    img.cabecera-hojas {   
+        width: 100%; 
+        height: 100%;
+    } 
+
+    img.logo {  
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+	    width: 100px;  
+	    height: 100px;
+    } 
+
+    img.cabecera {   
+        height: calc(100% -200px);
+        width: calc(100% -200px);
+    } 
+
+    img.image {  
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    } 
+
+    /* Textos */
+    #title1 {
+        font-family: "Tahoma";
+        font-size: 20px;
+        text-align: center;
+	    color: white;
+	    font-weight: bold;
+    }
+
+    #title2 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-weight: bold;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    #title3 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-weight: bold;
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    p {
+        font-family: "Tahoma";
+	    color: hsl(0, 0%, 20%);
+	    font-style: normal;
+        font-size: 15px;
+        text-align: justify;
+        margin-right: 20px;
+        margin-left: 20px;	
+    }
+
+    /* Espaciado de las cajas */
+    div.box2 {
+        display: flex;
+        flex-direction: column;
+        background-color: DarkGray ;
+        padding: 15px;
+    }
+
+    div.box3 {
+        display: flex;
+        flex-direction: column;
+        background-color: orange ;
+        padding: 15px;
+        }
+
+    div.box4 {
+        display: flex;
+        justify-content: center;
+        }
+
+    div.box5 {
+        display: flex;
+        justify-content: center;
+        background-color: DarkGray ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        }
+
+    span.contacto {
+        display: flex;
+        justify-content: center;
+        background-color: orange ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        } 
+
+    span.cabecera {
+        display: flex;
+        justify-content: space-around;
+        }
+
+    div.pie {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    table.list {
+        font-family: "Tahoma";
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th.list, td.list {
+        font-family: "Tahoma";
+        padding: 20px;
+        padding-left: 50px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Pantalla de ordenador */
+@media screen and (min-width: 1080px){
+
+    /* Estilos de la página */
+
+    /* Colores */
+    body {
+        background-color: white ;
+    }
+
+    /* Imágenes */
+    img.cabecera-hojas {   
+        width: 100%; 
+        height: 100%;
+    } 
+
+    img.logo {  
+	    width: 150px;  
+	    height: 150px;
+    } 
+
+    img.cabecera {   
+        height: calc(100% -200px);
+        width: calc(100% -200px);
+    } 
+
+    img.image {  
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    } 
+
+    /* Textos */
+    #title1 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: white;
+	    font-weight: bold;
+    }
+
+    #title2 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-weight: bold;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #title3 {
+        font-family: "Tahoma";
+        font-size: 20px;
+	    color: hsl(0, 0%, 30%);
+        font-weight: bold;
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    p {
+        font-family: "Tahoma";
+	    color: hsl(0, 0%, 20%);
+	    font-style: normal;
+        font-size: 15px;
+        text-align: justify;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* Espaciado de las cajas */
+    div.box2 {
+        background-color: DarkGray ;
+        padding: 20px;
+        display: flex;
+        align-content: space-between;
+    }
+
+    div.box3 {
+        display: flex;
+        justify-content: flex-start;
+        background-color: orange ;
+        padding: 20px;
+        }
+
+    div.box4 {
+        display: flex;
+        justify-content: center;
+        }
+
+    div.box5 {
+        display: flex;
+        justify-content: center;
+        background-color: DarkGray ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        }
+
+    span.contacto {
+        display: flex;
+        justify-content: center;
+        background-color: orange ;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        }
+
+    span.cabecera {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    div.pie {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    table.list {
+        font-family: "Tahoma";
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr.list, td.list {
+        font-family: "Tahoma";
+        padding: 20px;
+        padding-left: 50px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+}  
+
+
+    
+ 
+
+
+
+
+
+
